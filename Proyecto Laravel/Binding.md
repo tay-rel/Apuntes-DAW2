@@ -25,4 +25,33 @@ Tenga en cuenta que **recibimos el propio contenedor como argumento para resolve
 
 Como se ha mencionado, normalmente se interactúa con el contenedor dentro de los proveedores de servicios, sin embargo, si desea interactuar con el contenedor fuera de un proveedor de servicios, puede hacerlo a través de la App facade.
 
+## Ejemplo:
+
+Para este ejercicio se usara [[Service Providers]]  que se encarga de instaciar los objetos y las relaciones con otros servivios.
+
+```php
+//Providers/AppServiceProvider.php
+  public function register()  
+  {  
+    //Cuando se genera una clase de Sortable enlaza un objeto  
+      $this -> app ->bind(Sortable::class , function ($app){  
+          return new Sortable(request()->url());  //crea el nuevo objeto
+          //Request es la peticion que se guarda lo que viene por get y post .  
+          //Entonces el metodo Url nos devuelve la url que tiene en ese momento.      });  
+//sortale se le inicia la primera vez que le pasa 
+}
+						  
+//User Controller
+ public function trashed(Sortable $sortable)
+    {
+        return view('users.index', [
+            'users' => User::onlyTrashed()->paginate(),
+            'view' => 'trash',
+            'sortable'=>$sortable,
+        ]);
+    }
+//El objeto se crea mediante la inyeccion de App de estar manera se evita la creación de un nuevo objeto en cada metodo.
+    
+```
+
 https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_objects/Function/bind
