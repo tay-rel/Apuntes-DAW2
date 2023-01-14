@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ac5667f0ff3a0e83",
+        "id": "82140073f03c7aff",
         "type": "tabs",
         "children": [
           {
-            "id": "6df7b8e9bf4293dd",
+            "id": "84fd6657e26ba3e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes Javascript/Set.md",
+                "file": "Proyecto Laravel/Artisan Console.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "5cc66a723550a6e1",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Apuntes Javascript/Set.md",
+                "file": "Proyecto Laravel/Artisan Console.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Apuntes Javascript/Set.md",
+                "file": "Proyecto Laravel/Artisan Console.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes Javascript/Set.md"
+                "file": "Proyecto Laravel/Artisan Console.md"
               }
             }
           }
@@ -147,17 +146,17 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "6df7b8e9bf4293dd",
+  "active": "84fd6657e26ba3e2",
   "lastOpenFiles": [
+    "[.md",
+    "Proyecto Laravel/Artisan Console.md",
+    "Apuntes Javascript/Set.md",
     "Proyecto Laravel/Introducción a Laravel.md",
     "Proyecto Laravel/Query Builder.md",
     "Proyecto Laravel/Pasos proyecto.md",
-    "Proyecto Laravel/Artisan Console.md",
-    "Apuntes Javascript/Set.md",
     "Proyecto Laravel/Actualización de versión.md",
     "Proyecto Laravel/Binding.md",
     "Proyecto Laravel/Introduccion a TDD.md",
-    "Proyecto Laravel/Eloquent.md",
-    "[.md"
+    "Proyecto Laravel/Eloquent.md"
   ]
 }
