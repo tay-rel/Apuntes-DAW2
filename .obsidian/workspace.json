@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c33c38751b96e01d",
+            "id": "ba6f580fbcd0dd7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Apuntes Javascript/DOM.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "21f4973d26af10fb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Apuntes Javascript/NodeList.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ae82cc6fa3c58f3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Apuntes Javascript/Eventos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ddb1bcd35dc7ea0a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Apuntes Javascript/Expresiones Regulares.md",
+                "file": "Apuntes Javascript/Cookies.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5cc66a723550a6e1",
@@ -122,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Apuntes Javascript/Expresiones Regulares.md",
+                "file": "Apuntes Javascript/Cookies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Apuntes Javascript/Expresiones Regulares.md",
+                "file": "Apuntes Javascript/Cookies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,12 +126,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes Javascript/Expresiones Regulares.md"
+                "file": "Apuntes Javascript/Cookies.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -184,10 +147,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "3abdca0359444eb0",
+  "active": "ba6f580fbcd0dd7f",
   "lastOpenFiles": [
-    "Apuntes Javascript/Eventos.md",
     "Apuntes Javascript/Expresiones Regulares.md",
+    "Apuntes Javascript/Eventos.md",
     "Apuntes Javascript/DOM.md",
     "Apuntes Javascript/NodeList.md",
     "Apuntes Javascript/Map.md",
