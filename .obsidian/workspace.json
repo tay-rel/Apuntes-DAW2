@@ -55,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Apuntes Javascript/DOM.md",
+                "file": "Apuntes Javascript/Expresiones Regulares.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Apuntes Javascript/DOM.md",
+                "file": "Apuntes Javascript/Expresiones Regulares.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,15 +162,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes Javascript/DOM.md"
+                "file": "Apuntes Javascript/Expresiones Regulares.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -182,12 +184,12 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "c33c38751b96e01d",
+  "active": "3abdca0359444eb0",
   "lastOpenFiles": [
     "Apuntes Javascript/Eventos.md",
+    "Apuntes Javascript/Expresiones Regulares.md",
     "Apuntes Javascript/DOM.md",
     "Apuntes Javascript/NodeList.md",
-    "Apuntes Javascript/Expresiones Regulares.md",
     "Apuntes Javascript/Map.md",
     "Proyecto Laravel/Artisan Console.md",
     "[.md",
