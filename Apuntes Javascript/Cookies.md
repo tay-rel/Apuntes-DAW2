@@ -129,6 +129,7 @@ console.log(document.cookie);
 Si se utiliza el parámetro `expires`, recuerda que ha de ser una fecha en formato UTC. Te puede ser de ayuda el método `Date.toUTCString()`. Por ejemplo, una cookie con caducidad para el 1 de Febrero del año 2068 a las 11:20:
 
 ```javascript
+//(año, mes, dia, horas, minutos)
 var expiresdate = new Date(2068, 1, 02, 11, 20);
 var cookievalue = "Hola Mundo!";
 document.cookie = "testcookie=" + encodeURIComponent( cookievalue ) + "; expires=" + expiresdate.toUTCString();
@@ -205,3 +206,25 @@ document.cookie = "nombre=Juan; path=/";
 ```
 
 # Crear un objeto de todas las cookies
+
+```javascript
+
+document.cookie = "Nombre=Juan";
+document.cookie = "Section=Juguetes";
+document.cookie = "Financiacion=true";
+
+let array = document.cookie.split("; ");
+console.table(array);//en cada posicion hay una coockie
+
+let objetoCookie = {};
+array.forEach((cookie)=>{
+			let aux = cookie.split("=");
+			let clave = aux[0];
+			let valor = aux[1];
+
+console.log('Clave: %s Valor: %s', clave , valor);
+			  
+});
+
+```
+
