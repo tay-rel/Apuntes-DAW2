@@ -228,3 +228,32 @@ console.log('Clave: %s Valor: %s', clave , valor);
 
 ```
 
+# Cookies seguras
+
+Como hemos visto, para que una cookie sea segura debará:
+-   Indicar en la cookie el campo `“secure”`. **Las cookies sólo se enviarán a través del protocolo https**.
+
+-   Indica en la cookie el campo “http-only”. La cookie sólo será accesible mediante protocolos http (no podrá ser utilizada mediante lenguajes como JS).
+
+Por último y como novedad ha aparecido el campo `“same-site”`. Esta función solo está disponible en contextos seguros (HTTPS), en algunos o todos los navegadores compatibles.
+
+El atributo SameSite del encabezado de respuesta HTTP Set-Cookie le permite declarar si su cookie debe restringirse a un contexto de primera parte o del mismo sitio.
+
+Los valores posibles son *“None”, “Lax” y “Restrict”*. Este atributo se introdujo para manejar correctamente las cookies de terceros.
+
+Cuando tenemos nuestra página y cargamos algún recurso de otro dominio este nos puede generar cookies. Estas cookies podemos:
+
+-   *Strict*→Impedir que se envíen a este dominio externo. 
+-   *None* →Permitir que siempre se envíen a este dominio externo. 
+-   *Lax* →Permitir que se envíen sólo si se abre una pestaña nueva hacia ese dominio externo.
+
+```js
+function setCookie(clave, valor, fsegundos) {
+  
+let valido = encodeURIComponent(valor);
+document.cookie = `${clave}=${valido} + ";max-age="${segundos} samesite=sctrict`;
+
+}
+
+```
+

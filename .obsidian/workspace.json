@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "b5842226101627bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Apuntes Javascript/API rest.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "0a45d130c755cee6",
             "type": "leaf",
             "state": {
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5cc66a723550a6e1",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Apuntes Javascript/Localstorage(SessionStorage).md",
+                "file": "Apuntes Javascript/API rest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Apuntes Javascript/Localstorage(SessionStorage).md",
+                "file": "Apuntes Javascript/API rest.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Apuntes Javascript/Localstorage(SessionStorage).md"
+                "file": "Apuntes Javascript/API rest.md"
               }
             }
           }
@@ -159,17 +172,17 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "0a45d130c755cee6",
+  "active": "b5842226101627bd",
   "lastOpenFiles": [
     "Apuntes Javascript/Cookies.md",
+    "Apuntes Javascript/Localstorage(SessionStorage).md",
+    "Apuntes Javascript/API rest.md",
     "[.md",
     "Apuntes Javascript/Expresiones Regulares.md",
     "Apuntes Javascript/Eventos.md",
     "Apuntes Javascript/DOM.md",
     "Apuntes Javascript/NodeList.md",
     "Apuntes Javascript/Map.md",
-    "Proyecto Laravel/Artisan Console.md",
-    "Apuntes Javascript/Set.md",
-    "Proyecto Laravel/Introducción a Laravel.md"
+    "Proyecto Laravel/Artisan Console.md"
   ]
 }
