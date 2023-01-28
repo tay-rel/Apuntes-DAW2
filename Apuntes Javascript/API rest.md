@@ -47,9 +47,7 @@ Existen diferentes tipos de peticiones http:
 //cuando se pide todos los post te da un array de objetos
 //si le pide un post devuelve un json
 fetch('https://jsonplaceholder.typicode.com/todos/1')
-
 .then(response => response.json())
-
 .then(json => console.log(json));
 
 

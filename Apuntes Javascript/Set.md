@@ -1,6 +1,8 @@
 # [¿Qué son los Set?](https://lenguajejs.com/javascript/set-map/que-es-set-weakset/#qué-son-los-set)
 
-Los **Set** en Javascript son estructuras de datos nativas muy interesantes para representar conjuntos de datos. La característica principal es que los datos insertados **no se pueden repetir**, por lo que si intentamos insertar un valor que ya existe ,no se insertara de nuevo por lo que conn un set nos aseguramos de que no tendrá el mismo valor almacenado.
+Los **Set** en Javascript son estructuras de datos nativas muy interesantes para representar conjuntos de datos. La característica principal es que los datos insertados **no se pueden repetir**, por lo que si intentamos insertar un valor que ya existe ,no se insertara de nuevo por lo que con un set nos aseguramos de que no tendrá el mismo valor almacenado.
+
+Un Set es una colección de tipo especial:*“conjunto de valores”* (sin claves), donde cada valor puede aparecer solo una vez. Respeta el orden de inserción
 
 >*Nota:*
 >Los set son iterables ,  esto quiere decir que se recorren como una array.
@@ -142,4 +144,73 @@ const miSet = new Set(miArray);
 
 console.log(miSet);
 
+```
+
+# WeakSet
+
+El objeto **`WeakSet`** te permite almacenar _objetos_ débiles en una colección.
+
+Los objetos `WeakSet` son colecciones de objetos. Al igual que [`Set`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Set), cada objecto `WeakSet` puede estar solo una vez; todos los objetos en una colección `WeakSet` son unicos.
+
+Las principales diferencias con el objeto [`Set`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Set) son:
+
+-   `WeakSet` son colecciones de **objetos solamente**. No pueden contener valores arbitrarios de cualquier tipo, como pueden hacerlo los [`Set`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Set).
+
+-   El `WeakSet` es _débil_, lo que significa que las referencias a objetos en un `WeakSet` se mantienen _débilmente_. Si no existen otras referencias a un objecto almacenado en `WeakSet`, esos objctos pueden ser recolectados como basura.
+- Al igual que `Set`, admite[`add`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Weakset/add), [`has`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Weakset/has) y [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Weakset/delete), pero no `size`,`keys()` ni iteraciones.
+
+```javascript
+let visitedSet = new WeakSet();
+
+let john = { name: "John" };
+let pete = { name: "Pete" };
+let mary = { name: "Mary" };
+
+visitedSet.add(john); // John nos visita
+visitedSet.add(pete); // luego Pete
+visitedSet.add(john); // John otra vez
+
+// visitedSet tiene 2 usuarios ahora
+
+// comprobar si John nos visitó?
+alert(visitedSet.has(john)); // true
+
+// comprobar si Mary nos visitó?
+alert(visitedSet.has(mary)); // false
+
+john = null;
+
+// visitedSet se limpiará automáticamente
+```
+
+[`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet) es una colección tipo `Set` que almacena solo objetos y los elimina una vez que se vuelven inaccesibles por otros medios.
+
+>**Nota:**
+>`WeakMap` y`WeakSet` se utilizan como estructuras de dato “secundarias” además del almacenamiento de objetos “principal”. Una vez que el objeto se elimina del almacenamiento principal, si solo se encuentra como la clave de `WeakMap` o en un`WeakSet`, se limpiará automáticamente.
+
+## Ejemplo:
+
+```javascript
+let messages = [
+  {text: "Hello", from: "John"},
+  {text: "How goes?", from: "John"},
+  {text: "See you soon", from: "Alice"}
+];
+
+let readMessages = new WeakSet();
+
+// se han leído dos mensajes
+readMessages.add(messages[0]);
+readMessages.add(messages[1]);
+// readMessages tiene 2 elementos
+
+// ...¡leamos nuevamente el primer mensaje!
+readMessages.add(messages[0]);
+// readMessages todavía tiene dos únicos elementos
+
+// respuesta: ¿se leyó el mensaje [0]?
+alert("Read message 0: " + readMessages.has(messages[0])); // true
+
+messages.shift();
+// ahora readMessages tiene 1 elemento (técnicamente la memoria puede limpiarse más tarde)
 ```

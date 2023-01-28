@@ -65,7 +65,6 @@ Cookie: colorPreference=blue; sessionToken=48745487
 ```
 
 
-
 # Creación de cookies
 
 `<nombre>=<valor>`.
