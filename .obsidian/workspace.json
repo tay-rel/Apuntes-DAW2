@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "cdac662e7c27814d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lenguaje de Marcas/XSD.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -82,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5cc66a723550a6e1",
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lenguaje de Marcas/DTD.md",
+                "file": "Lenguaje de Marcas/XSD.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lenguaje de Marcas/DTD.md",
+                "file": "Lenguaje de Marcas/XSD.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lenguaje de Marcas/DTD.md"
+                "file": "Lenguaje de Marcas/XSD.md"
               }
             }
           }
@@ -159,7 +172,7 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "5acd501dd6f6676b",
+  "active": "cdac662e7c27814d",
   "lastOpenFiles": [
     "Lenguaje de Marcas/DTD.md",
     "Apuntes Javascript/Async-Await.md",
