@@ -171,3 +171,114 @@ En el tipo-de-contenido se especifica el contenido permitido en el elemento, pud
 >Esta propiedad suele ir acompañado de **CDATA**
 
 
+
+- Un atributo ID.
+El valor tiene que cumplir las mismas reglas que para especificar nombres XML.
+**Es decir**: nada de espacios, no pueden comenzar con un número y sólo admite
+letras, números y el carácter de subrayado ( *_* ).
+### Por ejemplo: 
+
+*ID*
+
+```dtd
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE cuadros [
+<!ELEMENT cuadros (cuadro*)>
+<!ELEMENT cuadro EMPTY>
+<!ATTLIST cuadro titulo ID #REQUIRED>
+<!ATTLIST cuadro autor CDATA #REQUIRED>
+
+]>
+  
+<cuadros>
+	<cuadro titulo="Adán_y_Eva" autor="Alberto Durero" />
+	<cuadro autor="Lucas Cranach, el viejo" titulo="Adán_y_Eva2" />
+</cuadros>
+<!--El itulo no se puede repetir ya que es de tipo ID-->
+```
+
+*NMTOKENS*.
+
+```DTD
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE futbol [
+
+<!ELEMENT futbol (jugador*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+
+]>
+
+
+<futbol>
+<jugador nombre="Alfredo Di Stéfano" codigo="N1" />
+<jugador nombre="Edson Arantes do Nascimento Pelé" codigo="N2" />
+<jugador nombre="Diego Armando Maradona" codigo="N3" />
+<jugador nombre="Johan Cruyff" codigo="N4" />
+</futbol>
+```
+
+Lo que no se permite en esta propiedad es lo siguiente:
+
+```xml
+<!--El atributo de NMTOKENS no debe tener comas. -->
+  <jugador nombre="Edson Arantes do Nascimento, Pelé" codigo="2" />
+```
+
+*IDREFS* : Un atributo de tipo IDREFS permite indicar varias referencias y debe contener valores que coincidan con valores de atributos de tipo ID.
+
+```DTD
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE futbol [
+<!ELEMENT futbol ((jugador|equipo)*)>
+<!ELEMENT jugador EMPTY>
+<!ATTLIST jugador nombre NMTOKENS #REQUIRED>
+<!ATTLIST jugador codigo ID #REQUIRED>
+<!ELEMENT equipo EMPTY>
+<!ATTLIST equipo nombre CDATA #REQUIRED>
+<!ATTLIST equipo jugadores IDREFS #IMPLIED>
+
+]>
+
+  
+
+<futbol>
+
+<jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+<jugador nombre="Edison Arantes do Nascimento" codigo="ean" />
+<jugador nombre="Diego Armando Maradona" codigo="dam" />
+<jugador nombre="Johan Cruyff" codigo="jc" />
+<equipo nombre="Società Sportiva Calcio Napoli" jugadores="dam"/>
+<equipo nombre="Futbol Club Barcelona" jugadores="jc dam" />
+
+</futbol>
+```
+
+*IMPLIED*:  indica que dicho atributo podria quedarse sin valor.
+
+```DTD
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE inventores [
+<!ELEMENT inventores (inventor)*>
+<!ELEMENT inventor EMPTY>
+<!ATTLIST inventor invento CDATA #REQUIRED>
+<!ATTLIST inventor nombre CDATA #IMPLIED>
+
+]>
+
+  
+
+<inventores>
+<inventor nombre="Robert Adler" invento="Mando a distancia" />
+<inventor nombre="Laszlo Josef Biro" invento="Bolígrafo" />
+<inventor nombre="Josephine Garis Cochran" invento="Lavaplatos" />
+<inventor invento="Fuego" />
+</inventores>
+
+```
+
