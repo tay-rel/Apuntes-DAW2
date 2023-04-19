@@ -123,6 +123,22 @@ Forzando: `git push -f -u origin <rama>`
 
 `git push origin HEAD --force` *ambos comandos deben ser ejecutados. Para eliminar de la rama*
 
+#### *Cambiar de rama  repositorio*
+
+Antes de nada se debe verificar en que rama y repositorio estamos y depues proseguir con lo siguiente , para trabajar a partir de esa rama y repositorio.
+
+- Eliminar la rama antigua
+
+`git remote remove origin`
+
+- Añadir tu rama
+
+`git remote add origin https://gitlab.com/otro_usuario/otro_repositorio.git`
+
+- Comprobar rama y repositorio 
+
+`git log`
+
 ## Clonar
 
 - Clonar un repositorio:
@@ -133,3 +149,8 @@ Forzando: `git push -f -u origin <rama>`
 
 `git clone -b <rama> [https://github.com/tay-rel/DAW2.git](https://github.com/user/repo.git)`
 
+## Bibliografia
+
+[Git](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez)
+[Borrar commits]([https://qastack.mx/programming/22620393/various-ways-to-remove-local-git-changes](https://qastack.mx/programming/22620393/various-ways-to-remove-local-git-changes))
+[Ramas](https://es.stackoverflow.com/questions/191716/cambiar-de-repositorio-remoto-en-un-repositorio-local-con-git)
