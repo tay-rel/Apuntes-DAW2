@@ -46,6 +46,13 @@ Podemos establecer una rama por defecto se asegura de que cualquier nuevo reposi
 git config --global init.defaultBranch main
 ```
 
+Para atualizar la punta de la rama de git 
+
+```
+git config --global pull.rebase true
+git config pull.rebase true
+```
+
 # Comandos Git
 
 - Iniciar proyecto, al iniciarlo se crea el siguiente fichero `.git`:  
