@@ -130,6 +130,10 @@ Forzando: `git push -f -u origin <rama>`
 
 `git push origin HEAD --force` *ambos comandos deben ser ejecutados. Para eliminar de la rama*
 
+- Eliminar un archivo de índice de git sin eliminarlo del sistema
+
+`git rm --cached <archivo>`
+
 #### *Cambiar de rama  repositorio*
 
 Antes de nada se debe verificar en que rama y repositorio estamos y depues proseguir con lo siguiente , para trabajar a partir de esa rama y repositorio.
