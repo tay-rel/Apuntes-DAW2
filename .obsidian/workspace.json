@@ -8,31 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "69bb629501bb475f",
+            "id": "d1d0f7a639589725",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Herramientas/Trello.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ccbff1bf3f4c108c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/Git en Ubuntu.md",
+                "file": "Despliegues/Despliegue en local de un proyecto UBUNTU.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -77,12 +64,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "f4c554ff1a5a9eda",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "5cc66a723550a6e1",
@@ -98,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Git en Ubuntu.md",
+                "file": "Despliegues/Despliegue en local de un proyecto UBUNTU.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/Git en Ubuntu.md",
+                "file": "Despliegues/Despliegue en local de un proyecto UBUNTU.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/Git en Ubuntu.md"
+                "file": "Despliegues/Despliegue en local de un proyecto UBUNTU.md"
               }
             }
           }
@@ -159,11 +155,19 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "ccbff1bf3f4c108c",
+  "active": "d1d0f7a639589725",
   "lastOpenFiles": [
-    "().md",
-    "Git/Git en Ubuntu.md",
+    "Proyecto Laravel/Filament/PermissionRole.md",
+    "Proyecto Laravel/Filament",
+    "Despliegues/MySQL.md",
+    "Despliegues/Despliegue en local de un proyecto UBUNTU.md",
+    "Despliegues/Nginx.md",
     "Herramientas/Trello.md",
+    "Proyecto Laravel/Introducción a Laravel.md",
+    "Proyecto Laravel/Apuntes-Ecommerce/Componentes.md",
+    "Git/Git en Ubuntu.md",
+    "Despliegues",
+    "().md",
     "Git",
     "Proyecto Laravel/MVC.md",
     "Herramientas",
@@ -175,7 +179,6 @@
     "Proyecto Laravel/Binding.md",
     "Proyecto Laravel/Eloquent.md",
     "Proyecto Laravel/HTTP Requests.md",
-    "Proyecto Laravel/Introducción a Laravel.md",
     "Proyecto Laravel/Reglas de validación de Laravel.md",
     "Proyecto Laravel/Query Builder.md",
     "Proyecto Laravel/Service Providers.md"
