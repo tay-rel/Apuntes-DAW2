@@ -27,7 +27,7 @@ $ git config --global user.email johndoe@example.com
 Podemos ver todos los elementos de configuración creados escribiendo lo siguiente:
 
 ```bash
-git config --list
+git config --global --list
 ```
 
 Si utilizas el transporte SSH para conectarte a remotas, es posible que tengas una clave sin frase de contraseña, lo que te permite transferir datos de forma segura sin escribir tu nombre de usuario y contraseña. Sin embargo, esto no es posible con los protocolos HTTP: **cada conexión necesita un nombre de usuario y una contraseña**. Esto se hace aún más difícil para los sistemas con autenticación de dos factores, donde el token que utilizas como contraseña se genera aleatoriamente y es impronunciable.
